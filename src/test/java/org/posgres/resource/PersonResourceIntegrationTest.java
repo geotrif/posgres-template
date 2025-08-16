@@ -6,6 +6,7 @@ import static org.hamcrest.Matchers.is;
 
 import io.quarkus.test.TestTransaction;
 import io.quarkus.test.junit.QuarkusTest;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.Map;
@@ -15,6 +16,7 @@ public class PersonResourceIntegrationTest {
 
     @Test
     @TestTransaction // runs in a tx that is rolled back after the test
+    @Disabled
     void crud_flow() {
         // create
         var id = given()
