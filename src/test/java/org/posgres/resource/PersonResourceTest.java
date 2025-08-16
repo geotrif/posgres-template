@@ -81,7 +81,6 @@ public class PersonResourceTest {
     }
 
     @Test
-    @Disabled
     void addPerson_persist() {
         // Given
         Person person = new Person();
