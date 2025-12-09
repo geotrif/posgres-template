@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 
 @Entity
 public class Person extends PanacheEntity {
+    public long id;
     public String name;
     public int age;
 }
